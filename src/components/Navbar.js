@@ -8,6 +8,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineMail,
 } from 'react-icons/ai';
 
 import { MdDeveloperMode } from 'react-icons/md';
@@ -91,7 +92,15 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: '2px' }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineMail style={{ marginBottom: '2px' }} /> Contact
+              </Nav.Link>
+            </Nav.Item>
             {/* <Nav.Item>
               <Nav.Link
                 href="http://www.logicstime.com/"
